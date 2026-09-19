@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--text-primary);
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-left: 40px;
+}
+
+.coffee-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.burger {
+  display: none;
+}
+
+.hero {
+  margin-top: 20px;
+  background: url('../img/img-hero.jpg') center / cover no-repeat;
+  border-radius: 40px;
+  height: 644px;
+  padding: 100px 0 0 100px;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 530px;
+  color: var(--text-inverse);
+}
+
+.offer-title {
+    font-size: 72px;
+    line-height: 105%;
+}
+
+
+.offer__content {
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.menu__btn {
+  display: inline-flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  width: 200px;
+  height: 64px;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  border-radius: 100px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.menu__btn:hover {
+  background-color: var(--text-primary);
+  color: var(--text-inverse);
+}

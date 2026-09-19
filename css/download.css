@@ -1,0 +1,148 @@
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 100px;
+  color: var(--text-primary);
+}
+
+.download__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 630px;
+}
+
+.download-title {
+  margin-bottom: 40px;
+}
+
+.download__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+.download__buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-app {
+  width: 200px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border: 1px solid var(--border-primary);
+  border-radius: 100px;
+  background-color: transparent;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-app__icon {
+  flex-shrink: 0;
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.btn-app__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-app__subtitle {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.btn-app__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.btn-app:hover {
+  background-color: var(--bg-container);
+  border-color: var(--bg-container);
+  color: var(--text-inverse);
+}
+
+.btn-app:hover .btn-app__icon {
+  color: var(--text-inverse);
+}
+
+.download__img-wrapper {
+  width: 630px;
+  height: 630px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .download {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 100px;
+  }
+
+  .download__content {
+    max-width: 100%;
+  }
+
+  .download__img-wrapper {
+    width: 100%;
+    height: auto;
+    max-width: 630px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .download {
+    margin-top: 80px;
+    gap: 60px;
+  }
+
+  .download__title {
+    font-size: 48px;
+  }
+
+  .download__img-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .download__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .download__description {
+    margin-bottom: 40px;
+  }
+
+  .download__buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-app {
+    width: 100%;
+    justify-content: center;
+  }
+}
