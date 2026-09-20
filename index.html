@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee House</title>
+    <script src="./script.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@1,500;1,600&display=swap"
       rel="stylesheet"
@@ -16,7 +17,12 @@
         <div class="header-menu">
           <div class="logo">
             <a href="#">
-              <img src="./img/Logo.png" alt="Coffee House Logo" />
+              <img src="./img/logo.svg" class="light" alt="Coffee House Logo" />
+              <img
+                src="./img/logo-dark.svg"
+                class="dark"
+                alt="Coffee House Logo"
+              />
             </a>
           </div>
 
@@ -30,12 +36,28 @@
           </nav>
 
           <div class="actions">
-            <button class="theme-switch" aria-label="Toggle theme">
-              <img src="./img/Theme-switch.svg" alt="Theme switch" />
+            <button
+              class="theme-switch"
+              id="theme-switch"
+              aria-label="Toggle theme"
+            >
+              <img
+                src="./img/Theme-switch.svg"
+                class="light"
+                alt="switch"
+                aria-hidden="true"
+              />
+              <img
+                src="./img/dark-border-primary.svg"
+                class="dark"
+                alt="switch"
+                aria-hidden="true"
+              />
             </button>
             <a href="#menu" class="coffee-menu">
               <span>Menu</span>
-              <img src="./img/coffee-cup.svg" alt="coffee cup" />
+              <img src="./img/coffee-cup.svg" class="light" alt="coffee cup" />
+              <img src="./img/coffee-dark.svg" class="dark" alt="coffee cup" />
             </a>
             <div class="burger"></div>
           </div>

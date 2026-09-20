@@ -9,6 +9,7 @@
 
   --border-primary: #C1B6AD;
   --border-inverse: #665F55;
+
 }
 
 [data-theme="dark"] {
@@ -22,7 +23,17 @@
 
   --border-primary: #665F55;
   --border-inverse: #C1B6AD;
+
 }
+
+[data-theme="light"] .dark {
+  display: none;
+}
+
+[data-theme="dark"] .light {
+  display: none;
+}
+
 
 html {
   font-family: 'Inter';

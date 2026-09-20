@@ -32,6 +32,10 @@
   padding-left: 40px;
 }
 
+.theme-switch img {
+  pointer-events: none;
+}
+
 .coffee-menu {
   display: flex;
   align-items: center;
@@ -59,8 +63,8 @@
 }
 
 .offer-title {
-    font-size: 72px;
-    line-height: 105%;
+  font-size: 72px;
+  line-height: 105%;
 }
 
 
@@ -86,4 +90,53 @@
 .menu__btn:hover {
   background-color: var(--text-primary);
   color: var(--text-inverse);
+}
+
+
+@media (max-width: 1024px) {
+  .nav {
+    gap: 10px;
+  }
+
+  .header-menu {
+    gap: 10px;
+  }
+
+  .actions {
+    padding-left: 0px;
+  }
+
+  .hero {
+    padding-left: 60px;
+  }
+
+  .offer {
+    max-width: 100%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .hero {
+    padding: 60px 16px;
+  }
+
+  .offer-title {
+    font-size: 42px;
+    line-height: 114.99999999999999%;
+  }
+
+
+  .offer__content {
+    font-size: 16px;
+  }
+
 }
