@@ -28,11 +28,11 @@
 
           <nav>
             <ul class="nav">
-              <li><a class="link" href="./index.html">Favorite coffee</a></li>
-              <li><a class="link" href="./index.html#about">About</a></li>
-              <li><a class="link" href="./index.html#mobile">Mobile app</a></li>
+              <li><a class="link  hover" href="./index.html">Favorite coffee</a></li>
+              <li><a class="link hover" href="./index.html#about">About</a></li>
+              <li><a class="link hover" href="./index.html#mobile">Mobile app</a></li>
               <li>
-                <a class="link" href="./index.html#contacts">Contact us</a>
+                <a class="link hover" href="./index.html#contacts">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -56,13 +56,23 @@
                 aria-hidden="true"
               />
             </button>
-            <a href="./coffee.html" class="coffee-menu">
+            <a href="./coffee.html" class="coffee-menu hover">
               <span>Menu</span>
-              <img src="./img/coffee-cup.svg" class="light" alt="Menu" />
-              <img src="./img/coffee-dark.svg" class="dark" alt="Menu" />
+              <img
+                src="./img/coffee-cup.svg"
+                class="light"
+                alt="Menu"
+                aria-hidden="true"
+              />
+              <img
+                src="./img/coffee-dark.svg"
+                class="dark"
+                alt="Menu"
+                aria-hidden="true"
+              />
             </a>
             <div class="coffee-menu-burger">
-              <img src="./img/menu.svg" alt="menu" />
+              <img src="./img/menu.svg" alt="menu" aria-hidden="true" />
             </div>
           </div>
         </div>
@@ -70,10 +80,10 @@
 
       <main>
         <section class="menu-section">
-          <h2 class="menu-title">
+          <h1 class="menu-title">
             Behind each of our cups hides an
             <span class="menu-accent">amazing surprise</span>
-          </h2>
+          </h1>
 
           <ul class="menu-tabs">
             <li>
@@ -102,7 +112,7 @@
                 <img src="./img/dessert-1.jpg" alt="Marble cheesecake" />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Marble cheesecake</h3>
+                <h2 class="card-title">Marble cheesecake</h2>
                 <p class="card-description">
                   Philadelphia cheese with lemon zest on a light sponge cake and
                   red currant jam
@@ -116,7 +126,7 @@
                 <img src="./img/dessert-2.jpg" alt="Red velvet" />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Red velvet</h3>
+                <h2 class="card-title">Red velvet</h2>
                 <p class="card-description">
                   Layer cake with cream cheese frosting
                 </p>
@@ -129,7 +139,7 @@
                 <img src="./img/dessert-3.jpg" alt="Cheesecakes" />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Cheesecakes</h3>
+                <h2 class="card-title">Cheesecakes</h2>
                 <p class="card-description">
                   Soft cottage cheese pancakes with sour cream and fresh berries
                   and sprinkled with powdered sugar
@@ -143,7 +153,7 @@
                 <img src="./img/dessert-4.jpg" alt="Creme brulee" />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Creme brulee</h3>
+                <h2 class="card-title">Creme brulee</h2>
                 <p class="card-description">
                   Delicate creamy dessert in a caramel basket with wild berries
                 </p>
@@ -156,7 +166,7 @@
                 <img src="./img/dessert-5.jpg" alt="Pancakes" />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Pancakes</h3>
+                <h2 class="card-title">Pancakes</h2>
                 <p class="card-description">
                   Tender pancakes with strawberry jam and fresh strawberries
                 </p>
@@ -169,7 +179,7 @@
                 <img src="./img/dessert-6.jpg" alt="Honey cake" />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Honey cake</h3>
+                <h2 class="card-title">Honey cake</h2>
                 <p class="card-description">
                   Classic honey cake with delicate custard
                 </p>
@@ -182,7 +192,7 @@
                 <img src="./img/dessert-7.jpg" alt="Chocolate cake" />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Chocolate cake</h3>
+                <h2 class="card-title">Chocolate cake</h2>
                 <p class="card-description">
                   Cake with hot chocolate filling and nuts with dried apricots
                 </p>
@@ -195,7 +205,7 @@
                 <img src="./img/dessert-8.jpg" alt="Black forest" />
               </div>
               <div class="card-content">
-                <h3 class="card-title">Black forest</h3>
+                <h2 class="card-title">Black forest</h2>
                 <p class="card-description">
                   A combination of thin sponge cake with cherry jam and light
                   chocolate mousse
@@ -204,7 +214,12 @@
               </div>
             </article>
           </div>
-          <img src="./img/button-icon-dark.svg" alt="button" />
+          <img
+            class="button-add"
+            src="./img/button-icon-dark.svg"
+            alt="button"
+            aria-hidden="true"
+          />
         </section>
       </main>
 
@@ -238,21 +253,21 @@
           </div>
 
           <div class="footer__contacts">
-            <h3 class="footer__subtitle">Contact us</h3>
+            <h2 class="footer__subtitle">Contact us</h2>
 
             <ul class="footer__list">
               <li>
                 <a
                   href="https://maps.google.com"
                   target="_blank"
-                  class="footer__link"
+                  class="footer__link  hover"
                 >
                   <img src="./img/pin-alt.svg" alt="maps" />
                   <span>8558 Green Rd., LA</span>
                 </a>
               </li>
               <li>
-                <a href="tel:+16035550123" class="footer__link">
+                <a href="tel:+16035550123" class="footer__link  hover">
                   <img src="./img/tel.svg" alt="tel" />
                   <span>+1 (603) 555-0123</span>
                 </a>
