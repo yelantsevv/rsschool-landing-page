@@ -42,6 +42,11 @@
   gap: 8px;
 }
 
+.theme-switch *,
+.coffee-menu * {
+  pointer-events: none;
+}
+
 .burger {
   display: none;
 }
