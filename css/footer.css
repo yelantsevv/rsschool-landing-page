@@ -82,6 +82,11 @@
   stroke: currentColor;
 }
 
+.footer__link.hover::after {
+  background-color: var(--text-inverse);
+}
+
+
 
 @media (max-width: 1024px) {
   .footer {
