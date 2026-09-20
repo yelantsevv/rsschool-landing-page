@@ -111,7 +111,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .download {
     margin-top: 80px;
     gap: 60px;
@@ -127,22 +127,16 @@
 }
 
 @media (max-width: 480px) {
-  .download__title {
+  .download-title {
     font-size: 32px;
-    margin-bottom: 24px;
+    margin-top: 24px;
   }
 
   .download__description {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
-  .download__buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .btn-app {
-    width: 100%;
-    justify-content: center;
+  .download {
+    gap: 40px;
   }
 }

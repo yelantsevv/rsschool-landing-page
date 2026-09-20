@@ -85,7 +85,7 @@
 
 @media (max-width: 1024px) {
   .footer {
-    padding: 60px;
+    padding: 100px 60px;
   }
 
   .footer__container {
@@ -93,9 +93,12 @@
     gap: 100px;
   }
 
-  .footer__offer,
+  .footer__socials {
+    margin-top: 0px;
+  }
+
   .footer__contacts {
-    max-width: 100%;
+    padding-top: 0;
   }
 
   .footer__offer {
@@ -103,12 +106,12 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .footer {
     margin-top: 80px;
   }
 
-  .footer__title {
+  .footer-title {
     font-size: 48px;
   }
 }
@@ -116,14 +119,14 @@
 @media (max-width: 480px) {
   .footer {
     padding: 60px 16px;
-    border-radius: 20px;
+    margin-top: 100px;
   }
 
   .footer__container {
     gap: 40px;
   }
 
-  .footer__title {
+  .footer-title {
     font-size: 32px;
   }
 }
