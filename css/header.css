@@ -47,7 +47,7 @@
   pointer-events: none;
 }
 
-.burger {
+.coffee-menu-burger {
   display: none;
 }
 
@@ -133,13 +133,19 @@
   .nav {
     display: none;
   }
+
+  .coffee-menu {
+    display: none;
+  }
+
+  .coffee-menu-burger {
+    display: block;
+  }
 }
 
 
 @media (max-width: 750px) {
-  .hero {
-    padding: 60px 16px;
-  }
+
 
   .offer-title {
     font-size: 42px;
@@ -155,7 +161,7 @@
 
 @media (max-width: 480px) {
   .hero {
-
+    padding: 60px 16px;
     height: 552px;
   }
 }

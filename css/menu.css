@@ -13,6 +13,7 @@
 }
 
 .menu-title {
+  max-width: 800px;
   text-align: center;
 }
 
@@ -111,6 +112,7 @@
   color: var(--text-primary);
   margin-bottom: 10px;
   flex-grow: 1;
+  font-weight: 400;
 }
 
 .card-price {
@@ -119,13 +121,31 @@
   color: var(--text-primary);
 }
 
-@media (max-width: 1024px) {
-  .card {
-    width: calc((100% - 40px) / 2);
-  }
+.button-add {
+  display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .card {
+    width: calc((100% - 40px)/2);
+    height: 505px;
+  }
+
+  .menu-card {
+    padding: 0 15px;
+  }
+
+  .card-none {
+    display: none;
+  }
+
+  .button-add {
+    display: block;
+  }
+
+}
+
+@media (max-width: 600px) {
   .card {
     width: 100%;
   }
