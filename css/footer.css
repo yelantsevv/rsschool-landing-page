@@ -38,7 +38,7 @@
 }
 
 .social-link:hover {
-  background-color: var(--bg-page);
+  background-color: var(--bg-overlay);
   color: var(--text-primary);
   border-color: var(--bg-page);
 }
