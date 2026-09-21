@@ -1,0 +1,167 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--text-primary);
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-left: 40px;
+}
+
+.theme-switch img {
+  pointer-events: none;
+}
+
+.coffee-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-switch *,
+.coffee-menu * {
+  pointer-events: none;
+}
+
+.coffee-menu-burger {
+  display: none;
+}
+
+.hero {
+  margin-top: 20px;
+  background: url('../img/img-hero.jpg') center / cover no-repeat;
+  border-radius: 40px;
+  height: 644px;
+  padding: 100px 0 0 100px;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 530px;
+  color: var(--text-inverse);
+}
+
+.offer-title {
+  font-size: 72px;
+  line-height: 105%;
+}
+
+
+.offer__content {
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.menu__btn {
+  display: inline-flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  width: 200px;
+  height: 64px;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  border-radius: 100px;
+  transition: all 0.2s ease;
+
+  & img {
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+}
+
+.menu__btn:hover {
+
+  & img {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .nav {
+    gap: 10px;
+  }
+
+  .header-menu {
+    gap: 10px;
+  }
+
+  .actions {
+    padding-left: 0px;
+  }
+
+  .hero {
+    padding-left: 60px;
+  }
+
+  .offer {
+    max-width: 100%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .coffee-menu {
+    display: none;
+  }
+
+  .coffee-menu-burger {
+    display: block;
+  }
+}
+
+
+@media (max-width: 750px) {
+
+
+  .offer-title {
+    font-size: 42px;
+    line-height: 114.99999999999999%;
+  }
+
+
+  .offer__content {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 16px;
+    height: 552px;
+  }
+}

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee House</title>
+    <script src="./script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-menu">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./img/logo.svg" class="light" alt="Coffee House Logo" />
+              <img
+                src="./img/logo-dark.svg"
+                class="dark"
+                alt="Coffee House Logo"
+              />
+            </a>
+          </div>
+
+          <nav>
+            <ul class="nav">
+              <li>
+                <a class="link hover" href="./index.html">Favorite coffee</a>
+              </li>
+              <li><a class="link hover" href="./index.html#about">About</a></li>
+              <li>
+                <a class="link hover" href="./index.html#mobile">Mobile app</a>
+              </li>
+              <li>
+                <a class="link hover" href="./index.html#contacts"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="actions">
+            <button
+              class="theme-switch"
+              id="theme-switch"
+              aria-label="Toggle theme"
+            >
+              <img
+                src="./img/Theme-switch.svg"
+                class="light"
+                alt="switch"
+                aria-hidden="true"
+              />
+              <img
+                src="./img/dark-border-primary.svg"
+                class="dark"
+                alt="switch"
+                aria-hidden="true"
+              />
+            </button>
+            <a href="./coffee.html" class="coffee-menu hover">
+              <span>Menu</span>
+              <img
+                src="./img/coffee-cup.svg"
+                class="light"
+                alt="Menu"
+                aria-hidden="true"
+              />
+              <img
+                src="./img/coffee-dark.svg"
+                class="dark"
+                alt="Menu"
+                aria-hidden="true"
+              />
+            </a>
+            <div class="coffee-menu-burger">
+              <img src="./img/menu.svg" alt="menu" aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="menu-section">
+          <h1 class="menu-title">
+            Behind each of our cups hides an
+            <span class="menu-accent">amazing surprise</span>
+          </h1>
+
+          <ul class="menu-tabs">
+            <li>
+              <a class="tab-btn" href="./coffee.html">
+                <span class="tab-icon">☕️</span>
+                <span class="tab-text">Coffee</span>
+              </a>
+            </li>
+            <li>
+              <a class="tab-btn active" href="./tea.html">
+                <span class="tab-icon">🫖</span>
+                <span class="tab-text">Tea</span>
+              </a>
+            </li>
+            <li>
+              <a class="tab-btn" href="./dessert.html">
+                <span class="tab-icon">🍰</span>
+                <span class="tab-text">Dessert</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="menu-card">
+            <article class="card">
+              <div class="card-img-wrapper">
+                <img src="./img/tea-1.jpg" alt="Moroccan" />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">Moroccan</h2>
+                <p class="card-description">
+                  Fragrant black tea with the addition of tangerine, cinnamon,
+                  honey, lemon and mint
+                </p>
+                <div class="card-price">$4.50</div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrapper">
+                <img src="./img/tea-2.jpg" alt="Ginger" />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">Ginger</h2>
+                <p class="card-description">
+                  Original black tea with fresh ginger, lemon and honey
+                </p>
+                <div class="card-price">$5.00</div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrapper">
+                <img src="./img/tea-3.jpg" alt="Cranberry" />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">Cranberry</h2>
+                <p class="card-description">
+                  Invigorating black tea with cranberry and honey
+                </p>
+                <div class="card-price">$5.00</div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrapper">
+                <img src="./img/tea-4.jpg" alt="Sea buckthorn" />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">Sea buckthorn</h2>
+                <p class="card-description">
+                  Toning sweet black tea with sea buckthorn, fresh thyme and
+                  cinnamon
+                </p>
+                <div class="card-price">$5.50</div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contacts">
+        <div class="footer__container">
+          <div class="footer__offer">
+            <h2 class="footer-title">
+              Sip, Savor, Smile. <br />
+              <span class="footer-accent">It’s coffee time!</span>
+            </h2>
+
+            <div class="footer__socials">
+              <a href="https://twitter.com" target="_blank" class="social-link">
+                <img src="./img/tw.svg" alt="twitter" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-link"
+              >
+                <img src="./img/in.svg" alt="instagram" />
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="social-link"
+              >
+                <img src="./img/fb.svg" alt="facebook" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__contacts">
+            <h2 class="footer__subtitle">Contact us</h2>
+
+            <ul class="footer__list">
+              <li>
+                <a
+                  href="https://maps.google.com"
+                  target="_blank"
+                  class="footer__link hover"
+                >
+                  <img src="./img/pin-alt.svg" alt="maps" />
+                  <span>8558 Green Rd., LA</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+16035550123" class="footer__link hover">
+                  <img src="./img/tel.svg" alt="tel" />
+                  <span>+1 (603) 555-0123</span>
+                </a>
+              </li>
+              <li>
+                <div class="footer__link">
+                  <img src="./img/clock.svg" alt="clock" />
+                  <span>Mon–Sat: 9:00–23:00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

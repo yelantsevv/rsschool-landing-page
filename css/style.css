@@ -1,0 +1,29 @@
+@import url("reset.css");
+@import url("variables.css");
+@import url("header.css");
+@import url("slider.css");
+@import url("about.css");
+@import url("download.css");
+@import url("footer.css");
+@import url("menu.css");
+
+
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 380px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 16px;
+  }
+}

@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee House</title>
+    <script src="./script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-menu">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./img/logo.svg" class="light" alt="Coffee House Logo" />
+              <img
+                src="./img/logo-dark.svg"
+                class="dark"
+                alt="Coffee House Logo"
+              />
+            </a>
+          </div>
+
+          <nav>
+            <ul class="nav">
+              <li><a class="link hover" href="#">Favorite coffee</a></li>
+              <li><a class="link hover" href="#about">About</a></li>
+              <li><a class="link hover" href="#mobile">Mobile app</a></li>
+              <li><a class="link hover" href="#contacts">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="actions">
+            <button
+              class="theme-switch"
+              id="theme-switch"
+              aria-label="Toggle theme"
+            >
+              <img
+                src="./img/Theme-switch.svg"
+                class="light"
+                alt="switch"
+                aria-hidden="true"
+              />
+              <img
+                src="./img/dark-border-primary.svg"
+                class="dark"
+                alt="switch"
+                aria-hidden="true"
+              />
+            </button>
+            <a href="./coffee.html" class="coffee-menu hover">
+              <span>Menu</span>
+              <img
+                src="./img/coffee-cup.svg"
+                class="light"
+                alt="Menu"
+                aria-hidden="true"
+              />
+              <img
+                src="./img/coffee-dark.svg"
+                class="dark"
+                alt="Menu"
+                aria-hidden="true"
+              />
+            </a>
+            <div class="coffee-menu-burger">
+              <img src="./img/menu.svg" alt="menu" aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="offer">
+            <h1 class="offer-title">
+              <span class="offer-accent">Enjoy</span> premium coffee at our
+              charming cafe
+            </h1>
+            <p class="offer__content">
+              With its inviting atmosphere and delicious coffee options, the
+              Coffee House Resource is a popular destination for coffee lovers
+              and those seeking a warm and inviting space to enjoy their
+              favorite beverage.
+            </p>
+            <a href="./coffee.html" class="menu__btn"
+              >Menu
+              <img
+                src="./img/coffee-cup.svg"
+                class="light"
+                alt="coffee cup"
+                aria-hidden="true"
+              />
+              <img
+                src="./img/coffee-dark.svg"
+                class="dark"
+                alt="coffee cup"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </section>
+
+        <section class="slider-wrapper">
+          <h2 class="slider-title">
+            Choose your <span class="slider-accent">favorite</span> coffee
+          </h2>
+
+          <div class="slider">
+            <button class="nav-button prev">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="59"
+                  height="59"
+                  rx="29.5"
+                  stroke="#665F55"
+                />
+                <path
+                  d="M36.5 30H24M30 36L24 30L30 24"
+                  stroke="#403F3D"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <div class="slider-viewport">
+              <div class="slider-track" id="sliderTrack">
+                <article class="slide active">
+                  <div class="slide__img-wrapper">
+                    <img
+                      src="./img/coffee-slider-1.png"
+                      alt="S'mores Frappuccino"
+                      class="slide__img"
+                    />
+                  </div>
+                  <div class="slide__content">
+                    <h3 class="slide__title">S’mores Frappuccino</h3>
+                    <p class="slide__description">
+                      This new drink takes an espresso and mixes it with brown
+                      sugar and cinnamon before being topped with oat milk.
+                    </p>
+                    <span class="slide__price">$5.50</span>
+                  </div>
+                </article>
+                <article class="slide">
+                  <div class="slide__img-wrapper">
+                    <img
+                      src="./img/coffee-slider-2.png"
+                      alt="Caramel Macchiato"
+                      class="slide__img"
+                    />
+                  </div>
+                  <div class="slide__content">
+                    <h3 class="slide__title">Caramel Macchiato</h3>
+                    <p class="slide__description">
+                      Fragrant and unique classic espresso with rich
+                      caramel-peanut syrup, with cream under whipped thick foam.
+                    </p>
+                    <span class="slide__price">$5.00</span>
+                  </div>
+                </article>
+
+                <article class="slide">
+                  <div class="slide__img-wrapper">
+                    <img
+                      src="./img/coffee-slider-3.png"
+                      alt="Ice coffee"
+                      class="slide__img"
+                    />
+                  </div>
+                  <div class="slide__content">
+                    <h3 class="slide__title">Ice coffee</h3>
+                    <p class="slide__description">
+                      A popular summer drink that tones and invigorates.
+                      Prepared from coffee, milk and ice.
+                    </p>
+                    <span class="slide__price">$4.50</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <button class="nav-button next">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="59"
+                  height="59"
+                  rx="29.5"
+                  stroke="#665F55"
+                />
+                <path
+                  d="M24 30H36.5M30.5 36L36.5 30L30.5 24"
+                  stroke="#403F3D"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="pagination">
+            <button class="pagination__bar active">
+              <span class="pagination__progress"></span>
+            </button>
+            <button class="pagination__bar">
+              <span class="pagination__progress"></span>
+            </button>
+            <button class="pagination__bar">
+              <span class="pagination__progress"></span>
+            </button>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <h2 class="about-title">
+            Resource is
+            <span class="about-accent">the perfect and cozy place</span> where
+            you can enjoy a variety of hot beverages, relax, catch up with
+            friends, or get some work done.
+          </h2>
+
+          <div class="about__images">
+            <div class="about__column">
+              <div class="about__img-wrapper tall">
+                <img
+                  src="./img/about-1.jpg"
+                  alt="Coffee about-1"
+                  class="about__img"
+                />
+              </div>
+              <div class="about__img-wrapper short">
+                <img
+                  src="./img/about-2.jpg"
+                  alt="Coffee about-2"
+                  class="about__img"
+                />
+              </div>
+            </div>
+
+            <div class="about__column">
+              <div class="about__img-wrapper short">
+                <img
+                  src="./img/about-3.jpg"
+                  alt="Coffee about-3"
+                  class="about__img"
+                />
+              </div>
+              <div class="about__img-wrapper tall">
+                <img
+                  src="./img/about-4.jpg"
+                  alt="Coffee about-4"
+                  class="about__img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="download" id="mobile">
+          <div class="download__content">
+            <h2 class="download-title">
+              <span class="download-accent">Download</span> our app <br />
+              to start ordering
+            </h2>
+            <p class="download__description">
+              Download the Resource app today and experience the comfort of
+              ordering your favorite coffee from wherever you are
+            </p>
+
+            <div class="download__buttons">
+              <a href="#" target="_blank" class="btn-app">
+                <svg
+                  width="27"
+                  height="32"
+                  viewBox="0 0 27 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.0578 16.8306C22.021 12.8323 25.4156 10.8871 25.5708 10.7966C23.6483 8.06361 20.6684 7.69021 19.6213 7.66043C17.1185 7.40364 14.6909 9.12057 13.4159 9.12057C12.1156 9.12057 10.1523 7.68524 8.03638 7.72742C5.31352 7.76836 2.76624 9.30541 1.36919 11.6922C-1.51399 16.5589 0.636305 23.7107 3.39861 27.6446C4.7804 29.5711 6.39503 31.7223 8.50843 31.6466C10.576 31.5635 11.3483 30.3614 13.8435 30.3614C16.3157 30.3614 17.0409 31.6466 19.1963 31.5982C21.4153 31.5635 22.8124 29.6629 24.1458 27.719C25.7426 25.5108 26.3839 23.3361 26.4093 23.2245C26.3572 23.2071 22.0998 21.6229 22.0578 16.8306Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M17.9863 5.07263C19.0983 3.71671 19.8592 1.872 19.648 0C18.0384 0.0694711 16.0256 1.08549 14.8664 2.41164C13.8409 3.58025 12.9248 5.49566 13.1615 7.29695C14.9695 7.42845 16.8259 6.40747 17.9863 5.07263Z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                <div class="btn-app__text">
+                  <span class="btn-app__subtitle">Available on the</span>
+                  <span class="btn-app__title">App Store</span>
+                </div>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-app"
+              >
+                <svg
+                  width="31"
+                  height="33"
+                  viewBox="0 0 31 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.572202 1.40292C0.209755 1.77285 0 2.34879 0 3.09466V29.6994C0 30.4452 0.209755 31.0212 0.572202 31.3911L0.661658 31.4723L15.9523 16.5699V16.2181L0.661658 1.31571L0.572202 1.40292Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M22.894 21.5399L17.8027 16.57V16.2181L22.9001 11.2481L23.0143 11.3128L29.0509 14.6617C30.7737 15.6121 30.7737 17.176 29.0509 18.1324L23.0143 21.4753L22.894 21.5399V21.5399Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M22.0897 22.4007L16.8781 17.3195L1.49805 32.3166C2.07025 32.903 3.00336 32.9737 4.06448 32.3872L22.0897 22.4007"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M22.0897 10.3875L4.06448 0.400992C3.00336 -0.179462 2.07025 -0.108787 1.49805 0.477683L16.8781 15.4688L22.0897 10.3875Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div class="btn-app__text">
+                  <span class="btn-app__subtitle">Available on</span>
+                  <span class="btn-app__title">Google Play</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="download__img-wrapper">
+            <img
+              src="./img/mobile-screens.png"
+              alt="Coffee House Mobile App"
+              class="download__img"
+            />
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contacts">
+        <div class="footer__container">
+          <div class="footer__offer">
+            <h2 class="footer-title">
+              Sip, Savor, Smile. <br />
+              <span class="footer-accent">It’s coffee time!</span>
+            </h2>
+
+            <div class="footer__socials">
+              <a href="https://twitter.com" target="_blank" class="social-link">
+                <img src="./img/tw.svg" alt="twitter" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-link"
+              >
+                <img src="./img/in.svg" alt="instagram" />
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="social-link"
+              >
+                <img src="./img/fb.svg" alt="facebook" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__contacts">
+            <h3 class="footer__subtitle">Contact us</h3>
+
+            <ul class="footer__list">
+              <li>
+                <a
+                  href="https://maps.google.com"
+                  target="_blank"
+                  class="footer__link hover"
+                >
+                  <img src="./img/pin-alt.svg" alt="maps" />
+                  <span>8558 Green Rd., LA</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+16035550123" class="footer__link hover">
+                  <img src="./img/tel.svg" alt="tel" />
+                  <span>+1 (603) 555-0123</span>
+                </a>
+              </li>
+              <li>
+                <div class="footer__link">
+                  <img src="./img/clock.svg" alt="clock" />
+                  <span>Mon–Sat: 9:00–23:00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
