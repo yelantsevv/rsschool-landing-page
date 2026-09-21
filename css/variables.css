@@ -53,3 +53,29 @@ html {
   font-style: Italic;
   color: var(--text-accent);
 }
+
+.hover {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: var(--text-primary);
+  padding-bottom: 2px;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--text-primary);
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+
+}
