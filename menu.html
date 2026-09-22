@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee House</title>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="module" src="./js/menu.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@1,500;1,600&display=swap"
       rel="stylesheet"
@@ -63,7 +64,7 @@
                 aria-hidden="true"
               />
             </button>
-            <a href="./coffee.html" class="coffee-menu hover">
+            <a href="#" class="coffee-menu hover">
               <span>Menu</span>
               <img
                 src="./img/coffee-cup.svg"
@@ -94,80 +95,38 @@
 
           <ul class="menu-tabs">
             <li>
-              <a class="tab-btn" href="./coffee.html">
+              <a class="tab-btn active" href="#" data-category="coffee">
                 <span class="tab-icon">☕️</span>
                 <span class="tab-text">Coffee</span>
               </a>
             </li>
             <li>
-              <a class="tab-btn active" href="./tea.html">
+              <a class="tab-btn" href="#" data-category="tea">
                 <span class="tab-icon">🫖</span>
                 <span class="tab-text">Tea</span>
               </a>
             </li>
             <li>
-              <a class="tab-btn" href="./dessert.html">
+              <a class="tab-btn" href="#" data-category="dessert">
                 <span class="tab-icon">🍰</span>
                 <span class="tab-text">Dessert</span>
               </a>
             </li>
           </ul>
 
-          <div class="menu-card">
-            <article class="card">
-              <div class="card-img-wrapper">
-                <img src="./img/tea-1.jpg" alt="Moroccan" />
-              </div>
-              <div class="card-content">
-                <h2 class="card-title">Moroccan</h2>
-                <p class="card-description">
-                  Fragrant black tea with the addition of tangerine, cinnamon,
-                  honey, lemon and mint
-                </p>
-                <div class="card-price">$4.50</div>
-              </div>
-            </article>
+          <div class="menu-card" id="menu-container"></div>
 
-            <article class="card">
-              <div class="card-img-wrapper">
-                <img src="./img/tea-2.jpg" alt="Ginger" />
-              </div>
-              <div class="card-content">
-                <h2 class="card-title">Ginger</h2>
-                <p class="card-description">
-                  Original black tea with fresh ginger, lemon and honey
-                </p>
-                <div class="card-price">$5.00</div>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card-img-wrapper">
-                <img src="./img/tea-3.jpg" alt="Cranberry" />
-              </div>
-              <div class="card-content">
-                <h2 class="card-title">Cranberry</h2>
-                <p class="card-description">
-                  Invigorating black tea with cranberry and honey
-                </p>
-                <div class="card-price">$5.00</div>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card-img-wrapper">
-                <img src="./img/tea-4.jpg" alt="Sea buckthorn" />
-              </div>
-              <div class="card-content">
-                <h2 class="card-title">Sea buckthorn</h2>
-                <p class="card-description">
-                  Toning sweet black tea with sea buckthorn, fresh thyme and
-                  cinnamon
-                </p>
-                <div class="card-price">$5.50</div>
-              </div>
-            </article>
-          </div>
+          <button
+            class="button-add"
+            id="load-more-btn"
+            aria-label="Load more cards"
+          >
+            <img
+              src="./img/button-icon-dark.svg"
+              alt="button"
+              aria-hidden="true"
+            />
+          </button>
         </section>
       </main>
 
