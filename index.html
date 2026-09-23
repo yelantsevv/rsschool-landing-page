@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee House</title>
     <script src="./js/script.js"></script>
+    <script type="module" src="./js/slider.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@1,500;1,600&display=swap"
       rel="stylesheet"
@@ -139,60 +140,7 @@
             </button>
 
             <div class="slider-viewport">
-              <div class="slider-track" id="sliderTrack">
-                <article class="slide active">
-                  <div class="slide__img-wrapper">
-                    <img
-                      src="./img/coffee-slider-1.png"
-                      alt="S'mores Frappuccino"
-                      class="slide__img"
-                    />
-                  </div>
-                  <div class="slide__content">
-                    <h3 class="slide__title">S’mores Frappuccino</h3>
-                    <p class="slide__description">
-                      This new drink takes an espresso and mixes it with brown
-                      sugar and cinnamon before being topped with oat milk.
-                    </p>
-                    <span class="slide__price">$5.50</span>
-                  </div>
-                </article>
-                <article class="slide">
-                  <div class="slide__img-wrapper">
-                    <img
-                      src="./img/coffee-slider-2.png"
-                      alt="Caramel Macchiato"
-                      class="slide__img"
-                    />
-                  </div>
-                  <div class="slide__content">
-                    <h3 class="slide__title">Caramel Macchiato</h3>
-                    <p class="slide__description">
-                      Fragrant and unique classic espresso with rich
-                      caramel-peanut syrup, with cream under whipped thick foam.
-                    </p>
-                    <span class="slide__price">$5.00</span>
-                  </div>
-                </article>
-
-                <article class="slide">
-                  <div class="slide__img-wrapper">
-                    <img
-                      src="./img/coffee-slider-3.png"
-                      alt="Ice coffee"
-                      class="slide__img"
-                    />
-                  </div>
-                  <div class="slide__content">
-                    <h3 class="slide__title">Ice coffee</h3>
-                    <p class="slide__description">
-                      A popular summer drink that tones and invigorates.
-                      Prepared from coffee, milk and ice.
-                    </p>
-                    <span class="slide__price">$4.50</span>
-                  </div>
-                </article>
-              </div>
+              <div class="slider-track" id="sliderTrack"></div>
             </div>
 
             <button class="nav-button next">
@@ -220,19 +168,9 @@
               </svg>
             </button>
           </div>
-
-          <div class="pagination">
-            <button class="pagination__bar active">
-              <span class="pagination__progress"></span>
-            </button>
-            <button class="pagination__bar">
-              <span class="pagination__progress"></span>
-            </button>
-            <button class="pagination__bar">
-              <span class="pagination__progress"></span>
-            </button>
-          </div>
+          <div class="pagination"></div>
         </section>
+
         <section class="about" id="about">
           <h2 class="about-title">
             Resource is
