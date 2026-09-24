@@ -46,7 +46,7 @@ export const products = {
       description: "Espresso with frothed milk and chocolate",
       price: "$5.50",
       image: "./img/coffee-7.jpg",
-      hidden: true,
+      "card-none": true,
     },
     {
       name: "Coffee with cognac",

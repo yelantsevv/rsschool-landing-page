@@ -19,3 +19,22 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("data-theme", newTheme);
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const burgerBtn = document.getElementById("burger-btn");
+  const headerMenu = document.querySelector(".header-menu");
+  const navLinks = document.querySelectorAll("nav a, .coffee-menu");
+
+  if (burgerBtn && headerMenu) {
+    burgerBtn.addEventListener("click", () => {
+      headerMenu.classList.toggle("open");
+      document.body.classList.toggle("lock-scroll");
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        headerMenu.classList.remove("open");
+        document.body.classList.remove("lock-scroll");
+      });
+    });
+  }
+});
