@@ -189,3 +189,9 @@ body.no-scroll {
   border-color: var(--bg-container);
   color: var(--text-inverse);
 }
+
+@media (max-width: 700px) {
+  .modal-img-wrapper {
+    display: none;
+  }
+}
