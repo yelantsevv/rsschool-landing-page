@@ -129,23 +129,12 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  overflow: hidden;
-  position: relative;
+  transition: background-color 0.3s ease;
 
 }
 
 .pagination__bar.active {
   background-color: var(--border-inverse);
-}
-
-
-.pagination__progress {
-  display: block;
-  height: 100%;
-  width: 0%;
-  background-color: var(--bg-container);
-  border-radius: 100px;
-
 }
 
 @media (max-width: 750px) {
