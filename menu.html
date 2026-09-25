@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee House</title>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="module" src="./js/menu.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@1,500;1,600&display=swap"
       rel="stylesheet"
@@ -30,7 +31,9 @@
           <nav>
             <ul class="nav">
               <li>
-                <a class="link hover" href="./index.html">Favorite coffee</a>
+                <a class="link hover" href="./index.html#favorite-coffee"
+                  >Favorite coffee</a
+                >
               </li>
               <li><a class="link hover" href="./index.html#about">About</a></li>
               <li>
@@ -63,7 +66,7 @@
                 aria-hidden="true"
               />
             </button>
-            <a href="./coffee.html" class="coffee-menu hover">
+            <a href="#" class="coffee-menu hover">
               <span>Menu</span>
               <img
                 src="./img/coffee-cup.svg"
@@ -78,8 +81,12 @@
                 aria-hidden="true"
               />
             </a>
-            <div class="coffee-menu-burger">
-              <img src="./img/menu.svg" alt="menu" aria-hidden="true" />
+            <div
+              class="coffee-menu-burger"
+              id="burger-btn"
+            >
+              <span></span>
+              <span></span>
             </div>
           </div>
         </div>
@@ -94,80 +101,38 @@
 
           <ul class="menu-tabs">
             <li>
-              <a class="tab-btn" href="./coffee.html">
+              <a class="tab-btn active" href="#" data-category="coffee">
                 <span class="tab-icon">☕️</span>
                 <span class="tab-text">Coffee</span>
               </a>
             </li>
             <li>
-              <a class="tab-btn active" href="./tea.html">
+              <a class="tab-btn" href="#" data-category="tea">
                 <span class="tab-icon">🫖</span>
                 <span class="tab-text">Tea</span>
               </a>
             </li>
             <li>
-              <a class="tab-btn" href="./dessert.html">
+              <a class="tab-btn" href="#" data-category="dessert">
                 <span class="tab-icon">🍰</span>
                 <span class="tab-text">Dessert</span>
               </a>
             </li>
           </ul>
 
-          <div class="menu-card">
-            <article class="card">
-              <div class="card-img-wrapper">
-                <img src="./img/tea-1.jpg" alt="Moroccan" />
-              </div>
-              <div class="card-content">
-                <h2 class="card-title">Moroccan</h2>
-                <p class="card-description">
-                  Fragrant black tea with the addition of tangerine, cinnamon,
-                  honey, lemon and mint
-                </p>
-                <div class="card-price">$4.50</div>
-              </div>
-            </article>
+          <div class="menu-card" id="menu-container"></div>
 
-            <article class="card">
-              <div class="card-img-wrapper">
-                <img src="./img/tea-2.jpg" alt="Ginger" />
-              </div>
-              <div class="card-content">
-                <h2 class="card-title">Ginger</h2>
-                <p class="card-description">
-                  Original black tea with fresh ginger, lemon and honey
-                </p>
-                <div class="card-price">$5.00</div>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card-img-wrapper">
-                <img src="./img/tea-3.jpg" alt="Cranberry" />
-              </div>
-              <div class="card-content">
-                <h2 class="card-title">Cranberry</h2>
-                <p class="card-description">
-                  Invigorating black tea with cranberry and honey
-                </p>
-                <div class="card-price">$5.00</div>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card-img-wrapper">
-                <img src="./img/tea-4.jpg" alt="Sea buckthorn" />
-              </div>
-              <div class="card-content">
-                <h2 class="card-title">Sea buckthorn</h2>
-                <p class="card-description">
-                  Toning sweet black tea with sea buckthorn, fresh thyme and
-                  cinnamon
-                </p>
-                <div class="card-price">$5.50</div>
-              </div>
-            </article>
-          </div>
+          <button
+            class="button-add"
+            id="load-more-btn"
+            aria-label="Load more cards"
+          >
+            <img
+              src="./img/button-icon-dark.svg"
+              alt="button"
+              aria-hidden="true"
+            />
+          </button>
         </section>
       </main>
 
@@ -230,6 +195,67 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="modal">
+        <div class="modal-img-wrapper">
+          <img src="#" alt="#" id="modal-img" />
+        </div>
+        <div class="modal-content">
+          <h3 class="modal-title" id="modal-title">modal-title</h3>
+          <p class="modal-description" id="modal-description"></p>
+
+          <div class="modal-option-group">
+            <span class="modal-option-label">Size</span>
+            <div class="modal-options" id="modal-sizes"></div>
+          </div>
+
+          <div class="modal-option-group">
+            <span class="modal-option-label">Additives</span>
+            <div class="modal-options" id="modal-additives"></div>
+          </div>
+
+          <div class="modal-total">
+            <span>Total:</span>
+            <span id="modal-total-price">$0.00</span>
+          </div>
+
+          <div class="modal-info">
+            <svg
+              class="modal-info-icon"
+              viewBox="0 0 16 16"
+              width="16"
+              height="16"
+            >
+              <circle
+                cx="8"
+                cy="8"
+                r="7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+              <text
+                x="8"
+                y="11.5"
+                text-anchor="middle"
+                font-size="10"
+                font-weight="bold"
+                fill="currentColor"
+              >
+                i
+              </text>
+            </svg>
+            <p>
+              The cost is not final. Download our mobile app to see the final
+              price and place your order. Earn loyalty points and enjoy your
+              favorite coffee with up to 20% discount.
+            </p>
+          </div>
+
+          <button class="modal-close-btn" id="modal-close-btn">Close</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
