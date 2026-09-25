@@ -1,15 +1,21 @@
 import { products } from "./products.js";
+import { openModal } from "./modal.js";
 
 const container = document.getElementById("menu-container");
+const loadMoreBtn = document.getElementById("load-more-btn");
+const tabs = document.querySelectorAll(".tab-btn");
+
+let currentCategory = "coffee";
 
 function renderCards(category) {
+  currentCategory = category;
   const items = products[category];
   if (!items || !container) return;
 
   container.innerHTML = items
     .map(
       (item) => `
-      <article class="card${item["card-none"] ? " card-none" : ""}">
+      <article class="card${item["card-none"] ? " card-none" : ""}" data-name="${item.name}">
         <div class="card-img-wrapper">
           <img src="${item.image}" alt="${item.name}" />
         </div>
@@ -27,9 +33,9 @@ function renderCards(category) {
 const activeTab = document.querySelector(".tab-btn.active");
 if (activeTab) {
   renderCards(activeTab.dataset.category);
+} else {
+  renderCards("coffee");
 }
-
-const tabs = document.querySelectorAll(".tab-btn");
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", (e) => {
@@ -43,16 +49,29 @@ tabs.forEach((tab) => {
   });
 });
 
-const loadMoreBtn = document.getElementById("load-more-btn");
-
 if (loadMoreBtn) {
   loadMoreBtn.addEventListener("click", () => {
-    const hiddenCards = document.querySelectorAll(".card.card-none");
-
+    const hiddenCards = container.querySelectorAll(".card.card-none");
     hiddenCards.forEach((card) => {
       card.classList.remove("card-none");
     });
-
     loadMoreBtn.style.display = "none";
+  });
+}
+
+if (container) {
+  container.addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
+    if (!card) return;
+
+    const productName = card.dataset.name;
+
+    const productData = products[currentCategory].find(
+      (item) => item.name === productName,
+    );
+
+    if (productData) {
+      openModal(productData);
+    }
   });
 }

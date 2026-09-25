@@ -6,6 +6,34 @@ export const products = {
         "Fragrant black coffee with Jameson Irish whiskey and whipped milk",
       price: "$7.00",
       image: "./img/coffee-1.jpg",
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Cinnamon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Kahlua coffee",
@@ -13,18 +41,102 @@ export const products = {
         "Classic coffee with milk and Kahlua liqueur under a cap of frothed milk",
       price: "$7.00",
       image: "./img/coffee-2.jpg",
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Cinnamon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Honey raf",
       description: "Espresso with frothed milk, cream and aromatic honey",
       price: "$5.50",
       image: "./img/coffee-3.jpg",
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Cinnamon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Ice cappuccino",
       description: "Cappuccino with soft thick foam in summer version with ice",
       price: "$5.00",
       image: "./img/coffee-4.jpg",
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Cinnamon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Espresso",
@@ -32,6 +144,34 @@ export const products = {
       price: "$4.50",
       image: "./img/coffee-5.jpg",
       "card-none": true,
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Cinnamon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Latte",
@@ -40,6 +180,34 @@ export const products = {
       price: "$5.50",
       image: "./img/coffee-6.jpg",
       "card-none": true,
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Cinnamon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Latte macchiato",
@@ -47,6 +215,34 @@ export const products = {
       price: "$5.50",
       image: "./img/coffee-7.jpg",
       "card-none": true,
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Cinnamon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Coffee with cognac",
@@ -54,6 +250,34 @@ export const products = {
       price: "$6.50",
       image: "./img/coffee-8.jpg",
       "card-none": true,
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Cinnamon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
   ],
   tea: [
@@ -63,18 +287,102 @@ export const products = {
         "Fragrant black tea with tangerine, cinnamon, honey, lemon and mint",
       price: "$4.50",
       image: "./img/tea-1.jpg",
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Lemon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Ginger",
       description: "Original black tea with fresh ginger, lemon and honey",
       price: "$5.00",
       image: "./img/tea-2.jpg",
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Lemon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Cranberry",
       description: "Invigorating black tea with cranberry and honey",
       price: "$5.00",
       image: "./img/tea-3.jpg",
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Lemon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Sea buckthorn",
@@ -82,6 +390,34 @@ export const products = {
         "Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon",
       price: "$5.50",
       image: "./img/tea-4.jpg",
+      sizes: {
+        s: {
+          size: "200 ml",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "300 ml",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "400 ml",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Sugar",
+          "add-price": "0.50",
+        },
+        {
+          name: "Lemon",
+          "add-price": "0.50",
+        },
+        {
+          name: "Syrup",
+          "add-price": "0.50",
+        },
+      ],
     },
   ],
   dessert: [
@@ -91,12 +427,68 @@ export const products = {
         "Philadelphia cheese with lemon zest on a light sponge cake and red currant jam",
       price: "$3.50",
       image: "./img/dessert-1.jpg",
+      sizes: {
+        s: {
+          size: "50 g",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "100 g",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "200 g",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Berries",
+          "add-price": "0.50",
+        },
+        {
+          name: "Nuts",
+          "add-price": "0.50",
+        },
+        {
+          name: "Jam",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Red velvet",
       description: "Layer cake with cream cheese frosting",
       price: "$4.00",
       image: "./img/dessert-2.jpg",
+      sizes: {
+        s: {
+          size: "50 g",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "100 g",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "200 g",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Berries",
+          "add-price": "0.50",
+        },
+        {
+          name: "Nuts",
+          "add-price": "0.50",
+        },
+        {
+          name: "Jam",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Cheesecakes",
@@ -104,6 +496,34 @@ export const products = {
         "Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar",
       price: "$4.50",
       image: "./img/dessert-3.jpg",
+      sizes: {
+        s: {
+          size: "50 g",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "100 g",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "200 g",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Berries",
+          "add-price": "0.50",
+        },
+        {
+          name: "Nuts",
+          "add-price": "0.50",
+        },
+        {
+          name: "Jam",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Creme brulee",
@@ -111,6 +531,34 @@ export const products = {
         "Delicate creamy dessert in a caramel basket with wild berries",
       price: "$4.00",
       image: "./img/dessert-4.jpg",
+      sizes: {
+        s: {
+          size: "50 g",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "100 g",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "200 g",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Berries",
+          "add-price": "0.50",
+        },
+        {
+          name: "Nuts",
+          "add-price": "0.50",
+        },
+        {
+          name: "Jam",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Pancakes",
@@ -118,6 +566,34 @@ export const products = {
       price: "$4.50",
       image: "./img/dessert-5.jpg",
       "card-none": true,
+      sizes: {
+        s: {
+          size: "50 g",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "100 g",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "200 g",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Berries",
+          "add-price": "0.50",
+        },
+        {
+          name: "Nuts",
+          "add-price": "0.50",
+        },
+        {
+          name: "Jam",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Honey cake",
@@ -125,6 +601,34 @@ export const products = {
       price: "$4.50",
       image: "./img/dessert-6.jpg",
       "card-none": true,
+      sizes: {
+        s: {
+          size: "50 g",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "100 g",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "200 g",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Berries",
+          "add-price": "0.50",
+        },
+        {
+          name: "Nuts",
+          "add-price": "0.50",
+        },
+        {
+          name: "Jam",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Chocolate cake",
@@ -133,6 +637,34 @@ export const products = {
       price: "$5.50",
       image: "./img/dessert-7.jpg",
       "card-none": true,
+      sizes: {
+        s: {
+          size: "50 g",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "100 g",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "200 g",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Berries",
+          "add-price": "0.50",
+        },
+        {
+          name: "Nuts",
+          "add-price": "0.50",
+        },
+        {
+          name: "Jam",
+          "add-price": "0.50",
+        },
+      ],
     },
     {
       name: "Black forest",
@@ -141,6 +673,34 @@ export const products = {
       price: "$6.50",
       image: "./img/dessert-8.jpg",
       "card-none": true,
+      sizes: {
+        s: {
+          size: "50 g",
+          "add-price": "0.00",
+        },
+        m: {
+          size: "100 g",
+          "add-price": "0.50",
+        },
+        l: {
+          size: "200 g",
+          "add-price": "1.00",
+        },
+      },
+      additives: [
+        {
+          name: "Berries",
+          "add-price": "0.50",
+        },
+        {
+          name: "Nuts",
+          "add-price": "0.50",
+        },
+        {
+          name: "Jam",
+          "add-price": "0.50",
+        },
+      ],
     },
   ],
 };

@@ -197,5 +197,66 @@
         </div>
       </footer>
     </div>
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="modal">
+        <div class="modal-img-wrapper">
+          <img src="" alt="" id="modal-img" />
+        </div>
+        <div class="modal-content">
+          <h3 class="modal-title" id="modal-title"></h3>
+          <p class="modal-description" id="modal-description"></p>
+
+          <div class="modal-option-group">
+            <span class="modal-option-label">Size</span>
+            <div class="modal-options" id="modal-sizes"></div>
+          </div>
+
+          <div class="modal-option-group">
+            <span class="modal-option-label">Additives</span>
+            <div class="modal-options" id="modal-additives"></div>
+          </div>
+
+          <div class="modal-total">
+            <span>Total:</span>
+            <span id="modal-total-price">$0.00</span>
+          </div>
+
+          <div class="modal-info">
+            <svg
+              class="modal-info-icon"
+              viewBox="0 0 16 16"
+              width="16"
+              height="16"
+            >
+              <circle
+                cx="8"
+                cy="8"
+                r="7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+              <text
+                x="8"
+                y="11.5"
+                text-anchor="middle"
+                font-size="10"
+                font-weight="bold"
+                fill="currentColor"
+              >
+                i
+              </text>
+            </svg>
+            <p>
+              The cost is not final. Download our mobile app to see the final
+              price and place your order. Earn loyalty points and enjoy your
+              favorite coffee with up to 20% discount.
+            </p>
+          </div>
+
+          <button class="modal-close-btn" id="modal-close-btn">Close</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
